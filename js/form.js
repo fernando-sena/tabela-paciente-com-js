@@ -12,7 +12,7 @@ botaoAdicionar.addEventListener("click",function(event){
          return
     }
   
-    adicioinaPacienteNaTabela(paciente)
+    let pacient = adicioinaPacienteNaTabela(paciente)
     
     form.reset()
     let = mensagemErro = document.querySelector('#mensagem-erro')
@@ -31,7 +31,7 @@ function exibeMensagensDeErro(erros){
   });
 
 function adicioinaPacienteNaTabela(paciente)
-let pacienteTr = montaTr(paciente)
+let pacienteTr = montaTr(pacient)
 let tabela = document.querySelector("#tabela-pacientes")
 tabela.appendChild(pacienteTr)
 
